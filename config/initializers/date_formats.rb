@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:dateheader] = "%A, %B %d"

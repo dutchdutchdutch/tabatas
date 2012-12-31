@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+%html
+%head
+  %title Tabatas 
+  = javascript_include_tag "application" 
+  = csrf_meta_tags 
+  = stylesheet_link_tag   "application", :media => "all"
+
+%body 
+  .navbar.navbar-fixed-top.navbar-inverse
+    .navbar-inner
+      .container
+        =link_to '', :class => 'btn btn-navbar' "data-toggle = 'collapse', data-target = '.nav-collapse'"
+        -#  %span.icon-bar
+        -#  %span.icon-bar
+        -#  %span.icon-bar
+         
+        =link_to '2Tabatas ', '/index.html', :class => 'brand'
+         
+        .nav-collapse
+          %ul.nav
+            %li
+              = link_to 'Exercises', '/exercises'    
+
+  .container      
+    = yield 
+
+
