@@ -1,13 +1,16 @@
 Tabatas::Application.routes.draw do
   
-  root :to => "pages#index"
+  root :to => "exercises#program"
   get "index.html", :to => "pages#index"
   
+  get "exercises/program"
   get 'tags/:tag', to: 'exercises#index', as: :tag
   resources :exercises
   # resources :pages
   
-  get "pages/index" 
+  get "pages/index"
+  
+  
   
   
 

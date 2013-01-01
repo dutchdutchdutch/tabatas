@@ -1,7 +1,9 @@
 class Exercise < ActiveRecord::Base
-  attr_accessible :description, :name, :tag_list
+  attr_accessible :description, :name, :tag_list, :today , :image, :remote_image_url
   has_many :taggings
   has_many :tags, through: :taggings
+  
+  mount_uploader :image, ImageUploader
   
   def self.tagged_with(name)
     Tag.find_by_name!(name).exercises

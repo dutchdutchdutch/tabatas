@@ -72,6 +72,25 @@ class ExercisesController < ApplicationController
       end
     end
   end
+  
+  def program
+        
+        @today = Time.now.to_s(:dateheader) 
+          
+        @exercises = Exercise.all
+        
+        @tabata1 = @exercises[1]
+        @tabata2 = @exercises[3]
+              
+
+      respond_to do |format|
+        format.html # index.html.erb
+        format.json { render json: @exercises }
+      end
+  end
+  
+  
+  
 
   # DELETE /exercises/1
   # DELETE /exercises/1.json

@@ -1,0 +1,29 @@
+
+%h1  
+  = @today
+ 
+%h3
+  
+%hr
+
+= form_for :exercise do |f|
+
+  = f.label "Tabata 1"
+  -# = f.select(:today, @exercises.collect {|s| [s.name, s.id]})
+  = f.radio(:today,  @exercises.collect {|s| [s.name, s.id]}) 
+
+  .actions
+    = f.submit 'Save',:class => "btn btn-inverse"
+
+
+
+    
+-# - @exercises.each do |exercise|
+  -# %ul
+         
+    -# %li= link_to exercise.name , exercise, :class => 'name'
+     
+
+
+
+

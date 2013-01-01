@@ -1,12 +1,19 @@
 class PagesController < ApplicationController
   
+  
+  
+  
+  
   def index
-    
+      
     @today = Time.now.to_s(:dateheader) 
+      
     render('pages/index')
-       
-  end
     
+    # @tabatas = Exercise.find_by(:today)
+     
+  end
+      
   
  
   
