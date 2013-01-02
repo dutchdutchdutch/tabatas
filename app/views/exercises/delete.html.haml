@@ -1,0 +1,13 @@
+%h2
+  = "Delete Exercise :"
+  =  @exercise.name
+
+= form_for(:exercise ,:url => {:action => 'destroy', :id => @exercise.id}) do |f|
+
+  %legend
+    This will permanently delete this exercise
+
+   
+
+  %form-buttons
+    = submit_tag("Delete Exercise", :class => "btn btn-danger")

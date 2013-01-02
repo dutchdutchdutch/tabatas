@@ -1,7 +1,9 @@
 
 .row
   .span6
-    %h1  Exercises
+    %h1  
+      
+      = @title
   .span6
    
     -# #tag_cloud
@@ -11,6 +13,7 @@
 
 %table.table.table-hover
   %tr
+    %th
     %th
     %th 
     %th
@@ -24,11 +27,14 @@
       
       
       
+      %td
+        = render 'todays_selection'
       %td= link_to exercise.name , exercise, :class => 'name'
       %td= truncate(exercise.description, :length => 80, :omission => "...")
       %td= raw exercise.tags.map(&:name).map { |t| link_to t, tag_path(t), :class => 'btn' }.join(' ')
       %td=  link_to '/' , edit_exercise_path(exercise), :class => 'edit'
+      -# %td= link_to 'X', delete_exercise_path(exercise), :class => 'edit'
+      -# %td= link_to("X", {:action => 'delete', :id => exercise.id}, :class => 'edit')
       %td= link_to 'X', exercise, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'edit'
-     
 
 

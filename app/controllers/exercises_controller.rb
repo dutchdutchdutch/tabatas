@@ -4,7 +4,11 @@ class ExercisesController < ApplicationController
   def index
     if params[:tag]
       @exercises = Exercise.tagged_with(params[:tag])
-    else      
+      @title  = params[:tag].to_s
+      
+      
+    else
+      @title = "Exercises"      
       @exercises = Exercise.all
     end    
 
@@ -81,8 +85,7 @@ class ExercisesController < ApplicationController
         
         @tabata1 = @exercises[1]
         @tabata2 = @exercises[3]
-              
-
+        
       respond_to do |format|
         format.html # index.html.erb
         format.json { render json: @exercises }
@@ -94,6 +97,14 @@ class ExercisesController < ApplicationController
 
   # DELETE /exercises/1
   # DELETE /exercises/1.json
+  
+  def delete
+      @exercise = Exercise.find(params[:id])
+   end
+
+
+  
+  
   def destroy
     @exercise = Exercise.find(params[:id])
     @exercise.destroy
