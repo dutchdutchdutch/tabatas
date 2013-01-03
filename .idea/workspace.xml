@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2160f316-c98f-4584-878b-144b379d55fc" name="Default" comment="dynamic tabata list on landing page">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_twitter_widget.html.haml" afterPath="$PROJECT_DIR$/app/views/exercises/_twitter_widget.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
     </list>
     <ignored path="tabatas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +21,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_twitter_widget.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_twitter_widget.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/exercises/_twitter_widget.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.054421768">
+            <state line="2" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="-1.28">
               <folding />
             </state>
           </provider>
@@ -61,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="bootstrap_and_overrides.css.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="15" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0">
+            <state line="70" column="17" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.514377">
               <folding />
             </state>
           </provider>
@@ -110,8 +106,8 @@
         <option value="$PROJECT_DIR$/app/assets/javascripts/_google_analytics.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/app/views/exercises/_twitter_widget.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
       </list>
     </option>
   </component>
@@ -844,16 +840,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
+    <entry file="file://$PROJECT_DIR$/app/views/exercises/_twitter_widget.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="15" selection-start="1778" selection-end="1778" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="-1.28">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/_twitter_widget.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.054421768">
+        <state line="70" column="17" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.514377">
           <folding />
         </state>
       </provider>
