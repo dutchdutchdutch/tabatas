@@ -13,8 +13,8 @@
 
 %table.table.table-hover
   %tr
-    %th
-    %th
+    %th{:colspan => 2}
+      = "Today"
     %th 
     %th
     %th{:colspan => 2} 
@@ -27,8 +27,10 @@
       
       
       
-      %td
-        = render 'todays_selection'
+      %td{:class => 'name'}
+        - if exercise.today == true
+          = " -"
+
       %td= link_to exercise.name , exercise, :class => 'name'
       %td= truncate(exercise.description, :length => 80, :omission => "...")
       %td= raw exercise.tags.map(&:name).map { |t| link_to t, tag_path(t), :class => 'btn' }.join(' ')
