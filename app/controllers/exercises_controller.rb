@@ -5,7 +5,7 @@ class ExercisesController < ApplicationController
     if params[:tag]
       @exercises = Exercise.tagged_with(params[:tag])
       @title  = params[:tag].to_s
-      
+
       
     else
       @title = "Exercises"      
@@ -85,6 +85,17 @@ class ExercisesController < ApplicationController
         
         @tabata1 = @exercises[1]
         @tabata2 = @exercises[3]
+
+
+        @dothese = Exercise.where(:today => true)
+          if @dothese.length > 1
+            @mytabata1 = @dothese[0]
+            @mytabata2 = @dothese[1]
+          else
+            @mytabata1 = @tabata1
+            @mytabata2 = @tabata2
+
+          end
         
       respond_to do |format|
         format.html # index.html.erb
