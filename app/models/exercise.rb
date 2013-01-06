@@ -1,5 +1,5 @@
 class Exercise < ActiveRecord::Base
-  attr_accessible :description, :name, :tag_list, :today , :image, :remote_image_url
+  attr_accessible :description, :name, :tag_list, :today , :image, :remote_image_url, :image_cache
   has_many :taggings
   has_many :tags, through: :taggings
   

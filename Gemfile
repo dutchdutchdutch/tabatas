@@ -10,6 +10,7 @@ gem 'libv8'
 gem 'twitter'
 gem 'carrierwave'
 gem 'mini_magick'
+# gem 'rmagick'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
