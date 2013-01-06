@@ -1,0 +1,33 @@
+.navbar.navbar-fixed-top.navbar-inverse
+  .navbar-inner
+    .container
+      =link_to '', :class => 'btn btn-navbar' "data-toggle = 'collapse', data-target = 'nav-collapse'"
+      -#  %span.icon-bar
+      -#  %span.icon-bar
+      -#  %span.icon-bar
+
+      =link_to '2Tabatas ', '/', :class => 'brand'
+
+      .nav-collapse
+        %ul.nav
+          %li
+            = link_to 'Exercises', '/exercises'
+
+        %ul.nav.pull-right.nav-pills
+          %li
+            - if current_user
+              -# = "Signed in as"
+              %a.btn.btn-inverse.dropdwon_toggle{"data-toggle" => "dropdown", "href" => "#"}
+                = current_user.name.strip
+              %ul.dropdown-menu
+                %li.dropdown
+                  = link_to "Sign out", signout_path
+
+            - else
+              %a.btn.btn-inverse.dropdwon_toggle{"data-toggle" => "dropdown", "href" => "#"}
+                = "Sign in"
+              %ul.dropdown-menu
+                %li.dropdown
+                  = link_to 'with Twitter', "/auth/twitter"
+                -# %li.dropdown
+                  -# = link_to "with Facebook", "/auth/facebook"

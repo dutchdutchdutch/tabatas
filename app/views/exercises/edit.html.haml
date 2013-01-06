@@ -2,6 +2,9 @@
 
 = render 'form'
 
+%hr
+= link_to 'delete', @exercise, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'edit'
+\|
 = link_to 'Show', @exercise
 \|
 = link_to 'Back', exercises_path

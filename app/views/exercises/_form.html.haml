@@ -8,13 +8,13 @@
 
   .field
     = f.label :name
-    = f.text_field :name
+    = f.text_field :name, :class => "span4"
   .field
-    = f.label :tag_list, "Tags (separated by commas)"
-    = f.text_field :tag_list
+    = f.label :tag_list, "Tags"
+    = f.text_field :tag_list, :class => "input-large" , :placeholder => "Separate tags by comma.", :class => "span4"
   .field
     = f.label :description
-    = f.text_area :description
+    = f.text_area :description, :placeholder => "Simple format support <p>,<br>,<b>, etc."  , :class => "span4"
   .field
     = f.check_box(:today)
     = "Today"
