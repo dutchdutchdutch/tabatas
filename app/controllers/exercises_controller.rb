@@ -52,7 +52,7 @@ class ExercisesController < ApplicationController
 
     respond_to do |format|
       if @exercise.save
-        format.html { redirect_to @exercise, notice: 'Exercise was successfully created.' }
+        format.html { redirect_to @exercise, notice: 'Exercise suggestion successfully submitted.' }
         format.json { render json: @exercise, status: :created, location: @exercise }
       else
         format.html { render action: "new" }
@@ -87,7 +87,8 @@ class ExercisesController < ApplicationController
         @tabata2 = @exercises[3]
 
 
-        @dothese = Exercise.where(:today => true)
+        # @dothese = Exercise.where(:today => true)
+        @dothese = Exercise.today
           if @dothese.length > 1
             @mytabata1 = @dothese[0]
             @mytabata2 = @dothese[1]

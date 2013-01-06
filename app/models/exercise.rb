@@ -4,6 +4,8 @@ class Exercise < ActiveRecord::Base
   has_many :tags, through: :taggings
   
   mount_uploader :image, ImageUploader
+
+  scope :today, where(:today => true)
   
   def self.tagged_with(name)
     Tag.find_by_name!(name).exercises
