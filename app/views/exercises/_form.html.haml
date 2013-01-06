@@ -8,23 +8,27 @@
 
   .field
     = f.label :name
-    = f.text_field :name, :class => "span4"
+    = f.text_field :name, :class => "span5"
   .field
     = f.label :tag_list, "Tags"
-    = f.text_field :tag_list, :class => "input-large" , :placeholder => "Separate tags by comma.", :class => "span4"
+    = f.text_field :tag_list, :class => "input-large" , :placeholder => "Separate tags by comma.", :class => "span5"
   .field
     = f.label :description
-    = f.text_area :description, :placeholder => "Simple format support <p>,<br>,<b>, etc."  , :class => "span4"
+    = f.text_area :description, :placeholder => "Simple format support <p>,<br>,<b>, etc."  , :class => "span5"
+
+  %fieldset
+    %h5 Image
+    .well.span4
+      = f.file_field :image, :placeholder => "Select file ...", :class => "span4"
+      = f.hidden_field :image_cache
+      = f.label :remote_image_url, "or Image URL"
+      = f.text_field :remote_image_url, :placeholder => "http://...", :class => "span4"
+
   .field
     = f.check_box(:today)
     = "Today"
-
-
-  = f.file_field :image
-  = f.hidden_field :image_cache
-  = f.label :remote_image_url, "or Image URL"
-  = f.text_field :remote_image_url
-
+    %br
+    %br
   -# .field f.label :remote_image_url. "or image URL"
   -# = f.text_field :remote_image-url
   
