@@ -1,10 +1,15 @@
 .navbar.navbar-fixed-top.navbar-inverse
   .navbar-inner
     .container
-      =link_to '', :class => 'btn btn-navbar' "data-toggle = 'collapse', data-target = 'nav-collapse'"
+      -# =link_to '', :class => 'btn btn-navbar' "data-toggle = 'collapse', data-target = 'nav-collapse'"
       -#  %span.icon-bar
       -#  %span.icon-bar
       -#  %span.icon-bar
+      
+      %button.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
 
       =link_to '2Tabatas ', '/', :class => 'brand'
 

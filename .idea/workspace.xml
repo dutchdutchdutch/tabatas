@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2160f316-c98f-4584-878b-144b379d55fc" name="Default" comment="dynamic tabata list on landing page">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/exercises/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_todays_tabatas.html.haml" afterPath="$PROJECT_DIR$/app/views/exercises/_todays_tabatas.html.haml" />
     </list>
     <ignored path="tabatas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +34,7 @@
       <file leaf-file-name="image_uploader.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="4" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
+            <state line="30" column="4" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,19 +94,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exercise.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="exercise.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="98" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+            <state line="1" column="98" selection-start="134" selection-end="134" vertical-scroll-proportion="0.021857923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="42" selection-start="369" selection-end="369" vertical-scroll-proportion="0.1880141">
+            <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-19.84">
               <folding />
             </state>
           </provider>
@@ -145,10 +145,10 @@
         <option value="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/exercises/show.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
         <option value="$PROJECT_DIR$/app/models/exercise.rb" />
         <option value="$PROJECT_DIR$/app/views/exercises/_todays_tabatas.html.haml" />
         <option value="$PROJECT_DIR$/app/views/exercises/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/uploaders/image_uploader.rb" />
       </list>
     </option>
   </component>
@@ -161,9 +161,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="271" />
-    <option name="y" value="67" />
+    <option name="y" value="22" />
     <option name="width" value="1522" />
-    <option name="height" value="1022" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -858,7 +858,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="271" y="67" width="1522" height="1022" extended-state="0" />
+    <frame x="271" y="22" width="1522" height="878" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -999,30 +999,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="49" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="4" selection-start="1440" selection-end="1440" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="98" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1041,9 +1020,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="4" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="42" selection-start="369" selection-end="369" vertical-scroll-proportion="0.1880141">
+        <state line="31" column="0" selection-start="1042" selection-end="1042" vertical-scroll-proportion="-19.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/exercises_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="49" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/exercise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="98" selection-start="134" selection-end="134" vertical-scroll-proportion="0.021857923">
           <folding />
         </state>
       </provider>
